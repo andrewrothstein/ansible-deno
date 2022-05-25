@@ -1,0 +1,56 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: looking for install in {{ deno_install_dir }}
+  become: true
+  stat:
+    path: '{{ deno_install_dir }}'
+  changed_when: false
+  register: deno_binary
+- when: not deno_binary.stat.exists
+  block:
+    - name: downloading {{ deno_url }} to {{ deno_tmp_archive }}
+      become: true
+      become_user: root
+      get_url:
+        url: '{{ deno_url }}'
+        dest: '{{ deno_tmp_archive }}'
+        mode: 0644
+        checksum: '{{ deno_checksum }}'
+    - name: mkdir {{ deno_install_dir }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ deno_install_dir }}'
+        state: directory
+        mode: 0755
+    - name: unarchiving {{ deno_tmp_archive }} into {{ deno_install_dir }}
+      become: true
+      become_user: root
+      unarchive:
+        remote_src: true
+        src: '{{ deno_tmp_archive }}'
+        dest: '{{ deno_install_dir }}'
+        creates: '{{ deno_install_exe }}'
+  always:
+    - name: rm {{ deno_tmp_archive }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ deno_tmp_archive }}'
+        state: absent
+- name: linking {{ deno_link }} to {{ deno_install_exe }}
+  become: true
+  become_user: root
+  file:
+    src: '{{ deno_install_exe }}'
+    dest: '{{  deno_link }}'
+    state: link

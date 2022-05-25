@@ -1,0 +1,10 @@
+---
+# vars file for deno
+deno_platform: '{{ deno_os }}-{{ deno_arch }}'
+deno_url: '{{ deno_mirror }}/v{{ deno_ver }}/deno-{{ deno_arch }}-{{ deno_os }}.zip'
+deno_name: deno-{{ deno_ver }}-{{ deno_platform }}
+deno_tmp_archive: '{{ deno_tmp_dir | default("/tmp") }}/{{ deno_name }}.zip'
+deno_checksum: '{{ deno_checksums[deno_ver][deno_platform] }}'
+deno_install_dir: '{{ deno_parent_install_dir }}/{{ deno_name }}'
+deno_install_exe: '{{ deno_install_dir }}/deno'
+deno_link: '{{ deno_parent_install_dir }}/bin/deno'
