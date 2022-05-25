@@ -34,3 +34,4 @@ galaxy_info:
 
 dependencies:
   - andrewrothstein.unarchive-deps
+  - andrewrothstein.alpine-glibc-shim
