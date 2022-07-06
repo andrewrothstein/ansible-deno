@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 1.23.1
+deno_ver: 1.23.3
 deno_os: unknown-linux-gnu
 deno_arch: x86_64
 deno_mirror: https://github.com/denoland/deno/releases/download
@@ -51,3 +51,21 @@ deno_checksums:
     apple-darwin-x86_64: sha256:5d5e22af2802b842198e7e4aa69a96731edbb0a711d5e1332ebb4d297dd9213b
     # https://github.com/denoland/deno/releases/download/v1.23.1/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:a55c7180e38c12e48681227f15725ba7743aa4467eeb59d42a340c2848b2edde
+  '1.23.2':
+    # https://github.com/denoland/deno/releases/download/v1.23.2/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:60aa95f14d107085b33ca9128b81b63cef933f814e94add95a8bc602775b29cf
+    # https://github.com/denoland/deno/releases/download/v1.23.2/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:ae8094ab21021592abc97107964994b4b87713819c6d29b7ab35eee300dc11e7
+    # https://github.com/denoland/deno/releases/download/v1.23.2/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:6f584b71972a2534a81ae8afc8c2e08adeb17ca75916bfc3281f0ef462a6e1e9
+    # https://github.com/denoland/deno/releases/download/v1.23.2/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:a119afc313358ff3f334d86491c2f019b3cdf94340318f88a24b5d885429fa8e
+  '1.23.3':
+    # https://github.com/denoland/deno/releases/download/v1.23.3/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:4f6de6e7772dd4cc9f4afcbd583c56a43cd5df2ae38d317c757850fcfcd845cc
+    # https://github.com/denoland/deno/releases/download/v1.23.3/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:fb8782b0ecf0b76279c5c171307976a4a6b6fdb6b0035fae95170ece8a2773be
+    # https://github.com/denoland/deno/releases/download/v1.23.3/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:92008bdee96718abd1e0f21275046347dcccc134f7f982323c6663d3212c315b
+    # https://github.com/denoland/deno/releases/download/v1.23.3/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:834ecd6e5530306540bb1c7e2c8a542b36581db1c7388400fbd6578b66347d71
