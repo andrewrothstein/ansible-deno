@@ -7,9 +7,6 @@ galaxy_info:
     - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: Alpine
-      versions:
-        - all
     - name: Archlinux
       versions:
         - all
@@ -23,8 +20,8 @@ galaxy_info:
         - 9
     - name: Fedora
       versions:
-        - 35
         - 36
+        - 37
     - name: Ubuntu
       versions:
         - bionic
@@ -33,7 +30,3 @@ galaxy_info:
   galaxy_tags:
     - development
   role_name: deno
-
-dependencies:
-  - andrewrothstein.unarchive-deps
-  - andrewrothstein.alpine-glibc-shim
