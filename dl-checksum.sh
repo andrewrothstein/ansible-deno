@@ -32,4 +32,5 @@ dl_ver() {
     dl $ver apple-darwin aarch64
 }
 
-dl_ver ${1:-1.27.0}
+dl_ver 1.27.1
+dl_ver ${1:-1.28.0}

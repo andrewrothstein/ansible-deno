@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 1.27.0
+deno_ver: 1.28.0
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -116,3 +116,21 @@ deno_checksums:
     apple-darwin-x86_64: sha256:bc0f399047ed5570da8d29a1c94f7bb8bedc3c64ebbc3a1c5b03a0fe8949a60d
     # https://github.com/denoland/deno/releases/download/v1.27.0/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:ceafccbfb1b86ce42d673c29d5b8c1f0c3f33e26df332e526ed4e01ecc2e081e
+  '1.27.1':
+    # https://github.com/denoland/deno/releases/download/v1.27.1/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:9e42a7933212d530a593bc9f0ad7cccbb8cc196bfe26c704f938eeeb8ec08fff
+    # https://github.com/denoland/deno/releases/download/v1.27.1/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:e16db71a80613bc7080eccc09037a2f1dccc5ded14a728f44dee42061c2d9723
+    # https://github.com/denoland/deno/releases/download/v1.27.1/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:6f8a70c51cea30bcc88cc6a6d872ff90daba88cd4953739e0632858b2c4f979c
+    # https://github.com/denoland/deno/releases/download/v1.27.1/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:a8c524b3087f899105e60c5857dce93f65bf0103bda93ee0a5c3daaeb5b22068
+  '1.28.0':
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:1f23102a92abe8d65cb194ae14d1ef4a4ea8574e53061eecb8381fd8371bbefc
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:1cf748de47e23295bd2d108fb1d17c8f81bdc89807ff3234a5c9b53f1854b5ec
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:bd6d6316efc9743d20c5bf4b710afbbad9f9866b4e7b051b142d9bf018dd5934
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:3d84a2470079839c0c38c44d51fa9ae749ded1c4fe42fe8a7e6b2643663f903c
