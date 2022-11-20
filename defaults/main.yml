@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 1.28.0
+deno_ver: 1.28.1
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -125,6 +125,24 @@ deno_checksums:
     apple-darwin-x86_64: sha256:6f8a70c51cea30bcc88cc6a6d872ff90daba88cd4953739e0632858b2c4f979c
     # https://github.com/denoland/deno/releases/download/v1.27.1/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:a8c524b3087f899105e60c5857dce93f65bf0103bda93ee0a5c3daaeb5b22068
+  '1.28.0':
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:1f23102a92abe8d65cb194ae14d1ef4a4ea8574e53061eecb8381fd8371bbefc
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:1cf748de47e23295bd2d108fb1d17c8f81bdc89807ff3234a5c9b53f1854b5ec
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:bd6d6316efc9743d20c5bf4b710afbbad9f9866b4e7b051b142d9bf018dd5934
+    # https://github.com/denoland/deno/releases/download/v1.28.0/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:3d84a2470079839c0c38c44d51fa9ae749ded1c4fe42fe8a7e6b2643663f903c
+  '1.28.1':
+    # https://github.com/denoland/deno/releases/download/v1.28.1/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:cf54d2edd8bb2619dd10fa3b93d4f8e483ca8821ab3854c491770e555a6668cf
+    # https://github.com/denoland/deno/releases/download/v1.28.1/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:779a5a417fa2e5d9cb0e8258b6eeadf9eb04909d8e311e86ff621bcd3deb72c9
+    # https://github.com/denoland/deno/releases/download/v1.28.1/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:53431f110aa28e83c46278802cc81661035a640c3e69084c7593fb397277b535
+    # https://github.com/denoland/deno/releases/download/v1.28.1/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:a7655ca86abf854bc2230798ae57cf1b13492aa144601f9fb127ccce876dea03
   '1.28.0':
     # https://github.com/denoland/deno/releases/download/v1.28.0/deno-x86_64-unknown-linux-gnu.zip
     unknown-linux-gnu-x86_64: sha256:1f23102a92abe8d65cb194ae14d1ef4a4ea8574e53061eecb8381fd8371bbefc
