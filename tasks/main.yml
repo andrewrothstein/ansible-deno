@@ -1,8 +1,9 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -11,48 +12,49 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: looking for install in {{ deno_install_dir }}
+- name: Looking for install in {{ deno_install_dir }}
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ deno_install_dir }}'
   changed_when: false
   register: deno_binary
-- when: not deno_binary.stat.exists
+- name: Downloading and installing deno
+  when: not deno_binary.stat.exists
   block:
-    - name: downloading {{ deno_url }} to {{ deno_tmp_archive }}
+    - name: Downloading {{ deno_url }} to {{ deno_tmp_archive }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ deno_url }}'
         dest: '{{ deno_tmp_archive }}'
-        mode: 0644
+        mode: '644'
         checksum: '{{ deno_checksum }}'
-    - name: mkdir {{ deno_install_dir }}
+    - name: Mkdir {{ deno_install_dir }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ deno_install_dir }}'
         state: directory
-        mode: 0755
-    - name: unarchiving {{ deno_tmp_archive }} into {{ deno_install_dir }}
+        mode: '755'
+    - name: Unarchiving {{ deno_tmp_archive }} into {{ deno_install_dir }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ deno_tmp_archive }}'
         dest: '{{ deno_install_dir }}'
         creates: '{{ deno_install_exe }}'
   always:
-    - name: rm {{ deno_tmp_archive }}
+    - name: Rm {{ deno_tmp_archive }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ deno_tmp_archive }}'
         state: absent
-- name: linking {{ deno_link }} to {{ deno_install_exe }}
+- name: Linking {{ deno_link }} to {{ deno_install_exe }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ deno_install_exe }}'
     dest: '{{  deno_link }}'
     state: link
