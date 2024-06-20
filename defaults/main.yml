@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 1.44.1
+deno_ver: 1.44.3
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -341,3 +341,12 @@ deno_checksums:
     apple-darwin-x86_64: sha256:c7ec9feb81f1e2b97c93175cba0d46b8fc3aa27c4f88c5df069af1c92c47a6f5
     # https://github.com/denoland/deno/releases/download/v1.44.1/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:af9e6bdce17ff41ca6f7a9446b7bcbfd6b2a6501f317232eed2afb8f398e58ed
+  '1.44.3':
+    # https://github.com/denoland/deno/releases/download/v1.44.3/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:d107000ec00f753a880d4d692f7bcccbefdb3dce196d2f02152d852c2a5a614c
+    # https://github.com/denoland/deno/releases/download/v1.44.3/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:6b7c7b0cf7da377dbe62ca3b7afcd3fa875c1cdfe89c277892bc547555528b8a
+    # https://github.com/denoland/deno/releases/download/v1.44.3/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:12352265a0852f1224bc429d91c449060a617ce86713e70591170d5e69d3aa69
+    # https://github.com/denoland/deno/releases/download/v1.44.3/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:89750f5b2b1ec21a7326fe59350b8691103dcb19af7133822e981e68579df389
