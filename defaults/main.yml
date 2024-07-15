@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 1.44.3
+deno_ver: 1.45.2
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -350,3 +350,21 @@ deno_checksums:
     apple-darwin-x86_64: sha256:12352265a0852f1224bc429d91c449060a617ce86713e70591170d5e69d3aa69
     # https://github.com/denoland/deno/releases/download/v1.44.3/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:89750f5b2b1ec21a7326fe59350b8691103dcb19af7133822e981e68579df389
+  '1.44.4':
+    # https://github.com/denoland/deno/releases/download/v1.44.4/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:c48f6d13aa32d0ce9f1f33ca2f44386db885660a031b99d3bb50e5ccc0e9ee55
+    # https://github.com/denoland/deno/releases/download/v1.44.4/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:b3246d4bb1bd360ef47c4eb8b90def4b0629c86c8668bf346c33ee87cd3adcca
+    # https://github.com/denoland/deno/releases/download/v1.44.4/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:828c1a916671449d8353b0e5ac71a6a7acdcded0222e688de96bb0e236f856dd
+    # https://github.com/denoland/deno/releases/download/v1.44.4/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:701ac8cd2aac26355944c37792cf8e60658208e22768690465798827e3170646
+  '1.45.2':
+    # https://github.com/denoland/deno/releases/download/v1.45.2/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:bd92822f0b12fc0e9e050c494c43226d40b1acda6c8acc86c85843ed37f7de95
+    # https://github.com/denoland/deno/releases/download/v1.45.2/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:3b94de2b9b63b9859affb290fe976f6f09338964d0b8cce3c1c42a35efe0575c
+    # https://github.com/denoland/deno/releases/download/v1.45.2/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:4a4ea94f27dea2c0a4a01c002915e4e7ae631b1d5ba62ac68cb499522eead8cb
+    # https://github.com/denoland/deno/releases/download/v1.45.2/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:de9627d06ae4d6b9960430ad294789cfb55f327b31e6d032c0c3b1ad7b7e45c1
