@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 2.1.2
+deno_ver: 2.1.4
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -449,3 +449,21 @@ deno_checksums:
     apple-darwin-x86_64: sha256:fd31440d941e7a4eee3aad03799e15679e0ba21d8ab75756e3f2ae423033ca8b
     # https://github.com/denoland/deno/releases/download/v2.1.2/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:cbe69e4b3d36337c24d4c1e43ee776ad93e22624c048f2e0df07f0d8eb5cacd1
+  '2.1.3':
+    # https://github.com/denoland/deno/releases/download/v2.1.3/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:4475fa731a765f5fb570d1cabb25d28a16f18f4fb545fc1859655da84521dfe5
+    # https://github.com/denoland/deno/releases/download/v2.1.3/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:64afa4d4469cde7d1fdb47f7552c14298ea79a5fa4191949fb768913e4f3a2c1
+    # https://github.com/denoland/deno/releases/download/v2.1.3/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:0977d3f49c1b5f3fd720c5f3581a7205fb5182c205f5c569e40f4ea691641111
+    # https://github.com/denoland/deno/releases/download/v2.1.3/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:22664977708390ab55c89d2ae57f0cdbdfc212681380d4d40748788096d8e65e
+  '2.1.4':
+    # https://github.com/denoland/deno/releases/download/v2.1.4/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:54a81939cccb2af114c4d0a68a554cf4a04b1f08728e70f663f83781de19d785
+    # https://github.com/denoland/deno/releases/download/v2.1.4/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:d85abec3fc5533c20f1369b9c2fbb5f49348d1f69994779c09f56383bd46aa10
+    # https://github.com/denoland/deno/releases/download/v2.1.4/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:fe537f538790a3edf141e4a1abc6d3e5f714b20f6427bd48808d98a9a94000f5
+    # https://github.com/denoland/deno/releases/download/v2.1.4/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:65efe137ee28846427ae7b6c5135439744065ad59ccb3c8cd19e69af066e2db0
