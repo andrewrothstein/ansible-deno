@@ -1,6 +1,6 @@
 ---
 # defaults file for deno
-deno_ver: 2.2.4
+deno_ver: 2.2.6
 deno_os_map:
   Linux: unknown-linux-gnu
   Windows: pc-windows-msvc
@@ -557,3 +557,21 @@ deno_checksums:
     apple-darwin-x86_64: sha256:f6d28659961546a056178aada450c256ccbc75f2171e0f616634f86f2519ee3f
     # https://github.com/denoland/deno/releases/download/v2.2.4/deno-aarch64-apple-darwin.zip
     apple-darwin-aarch64: sha256:ed7b735b4d8d4ab081b8c3f2807adf388aba4fb964c17cae28b27a2946807e20
+  '2.2.5':
+    # https://github.com/denoland/deno/releases/download/v2.2.5/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:c4584a6f427f03c6de28878a15b14e749340ec580c650b53fd600f048315db5f
+    # https://github.com/denoland/deno/releases/download/v2.2.5/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:2930bed00dbd74939ccf726a9133632f4ac0cd02b0dd76e4413f4e0a7ebe9471
+    # https://github.com/denoland/deno/releases/download/v2.2.5/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:556288102314c296d1453b34f983a103cf479c3363ff495a88c5c5302b21f1a0
+    # https://github.com/denoland/deno/releases/download/v2.2.5/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:9ee4df05ad414ee457b1e5303903abb3e1d4bd050ad0eb57ef81b325184bc36e
+  '2.2.6':
+    # https://github.com/denoland/deno/releases/download/v2.2.6/deno-x86_64-unknown-linux-gnu.zip
+    unknown-linux-gnu-x86_64: sha256:2bc96c49f5ceb5a74add43f16381e2a2ab5f509c5a5665c5533a661a4141e650
+    # https://github.com/denoland/deno/releases/download/v2.2.6/deno-x86_64-pc-windows-msvc.zip
+    pc-windows-msvc-x86_64: sha256:e0229e239b4b3ffd356a7731dcab9e277c7750669c27515c4c22cd21b1c0108d
+    # https://github.com/denoland/deno/releases/download/v2.2.6/deno-x86_64-apple-darwin.zip
+    apple-darwin-x86_64: sha256:85eaa0d3f8e76931ca4b03f3d5befcb2ad72942db2a3233e3abf2dab58db52bc
+    # https://github.com/denoland/deno/releases/download/v2.2.6/deno-aarch64-apple-darwin.zip
+    apple-darwin-aarch64: sha256:4459182bd23c28958c807f06645e371ec8a34cddb70a1d99680e75cca76d6e86
